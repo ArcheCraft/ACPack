@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "2B6AC4A790F6F993", title: "Resources" }
+		{ id: "0065AB77FAF57B51", title: "Tech" }
+		{ id: "3065F69549DBEC4F", title: "Storage" }
+		{ id: "44A4B1A2E61F732B", title: "Mobs" }
+		{ id: "3113542920F7B466", title: "Dimensions" }
+	]
+}

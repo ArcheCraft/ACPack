@@ -1,0 +1,44 @@
+[
+  {
+    "baseRegistryName": "minecraft:cobblestone",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  },
+  {
+    "baseRegistryName": "minecraft:sand",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  },
+  {
+    "baseRegistryName": "minecraft:netherrack",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  },
+  {
+    "baseRegistryName": "exnihilosequentia:crushed_netherrack",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  },
+  {
+    "baseRegistryName": "minecraft:gravel",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  },
+  {
+    "baseRegistryName": "minecraft:end_stone",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  },
+  {
+    "baseRegistryName": "exnihilosequentia:crushed_end_stone",
+    "depth": 16,
+    "hardnessMultiplier": 9.0,
+    "recipeEnabled": true
+  }
+]

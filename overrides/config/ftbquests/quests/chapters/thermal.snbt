@@ -1,0 +1,11 @@
+{
+	id: "3339D774D2778B4A"
+	group: "0065AB77FAF57B51"
+	order_index: 0
+	filename: "thermal"
+	title: "Thermal"
+	icon: "thermal:rf_coil"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

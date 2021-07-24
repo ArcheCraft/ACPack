@@ -1,0 +1,11 @@
+{
+	id: "6CA61EC525E59BC9"
+	group: "44A4B1A2E61F732B"
+	order_index: 0
+	filename: "mob_grinding_utils"
+	title: "Mob Grinding Utils"
+	icon: "mob_grinding_utils:saw"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

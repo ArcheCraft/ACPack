@@ -1,0 +1,453 @@
+{
+	id: "47CD536795512DD7"
+	group: "2B6AC4A790F6F993"
+	order_index: 0
+	filename: "ex_nihilo"
+	title: "Ex Nihilo"
+	icon: "exnihilosequentia:sieve"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.5d
+			y: -2.0d
+			description: [
+				"Start by planting the sapling."
+				"You can twerk to speed the process up."
+				"You can also veinmine the tree using FTB Ultimine."
+			]
+			id: "09D1F1603B0AFCB2"
+			tasks: [{
+				id: "21F19212C301C498"
+				type: "item"
+				title: "Any #minecraft:planks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: 2.0d
+			description: [
+				"You can Shift + Right Click on dirt with an empty hand to obtain pebbles."
+				"These can be used to craft your first cobblestone."
+			]
+			id: "5417266689AEA084"
+			tasks: [
+				{
+					id: "7BD4B07AB900BBE5"
+					type: "item"
+					item: "botania:pebble"
+				}
+				{
+					id: "0A22971A96A58FA3"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			description: [
+				"You can use a crook on leaves to increase drops and get silkworms."
+				"Use the silkworms on leaves to start infesting them."
+				"Once finished, break the infested leaves with the crook to get string."
+			]
+			dependencies: ["09D1F1603B0AFCB2"]
+			id: "1A12AFA1D819F322"
+			tasks: [
+				{
+					id: "1C833330E806B62A"
+					type: "item"
+					title: "Any #exnihilosequentia:crook"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "exnihilosequentia:crook"
+						}
+					}
+				}
+				{
+					id: "25F8F41E2C92646E"
+					type: "item"
+					item: "exnihilosequentia:silkworm"
+				}
+				{
+					id: "1CA1449FA4482A6C"
+					type: "item"
+					item: "minecraft:string"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			description: ["You can connect up to 3x3 sieves to sieve at once."]
+			dependencies: ["1A12AFA1D819F322"]
+			id: "0AC24771DA51DD31"
+			tasks: [
+				{
+					id: "26C2EAADDAAECD4C"
+					type: "item"
+					item: "exnihilosequentia:sieve"
+				}
+				{
+					id: "0CF8F010C96578F9"
+					type: "item"
+					item: {
+						id: "exnihilosequentia:mesh_string"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			description: ["The hammer is an import tool, allowing you to crush blocks down into other blocks."]
+			dependencies: ["5417266689AEA084"]
+			id: "28328F5DE1DCEA4D"
+			tasks: [{
+				id: "221A5FE4869DEA54"
+				type: "item"
+				title: "Any #exnihilosequentia:hammer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:hammer"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			description: [
+				"By hammering cobblestone you can obtain gravel."
+				"There is also the option to compress to cobblestone before hammering to speed it up."
+			]
+			dependencies: ["28328F5DE1DCEA4D"]
+			id: "68D40173FAC82B28"
+			tasks: [{
+				id: "70ACD4A6BB1ADDD3"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			description: ["By sieving the gravel, you can obtain flint at much higher rates than by putting 3 gravel into the crafting grid."]
+			dependencies: [
+				"0AC24771DA51DD31"
+				"68D40173FAC82B28"
+			]
+			id: "099B8489222D8532"
+			tasks: [{
+				id: "0C5CF29D859ACEBD"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			description: ["With the flint mesh you can obtain most of the ores and other higher tier materials."]
+			dependencies: ["099B8489222D8532"]
+			id: "0B8F780422541257"
+			tasks: [{
+				id: "1A1C67706BE75522"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_flint"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: ["By crushing gravel with the hammer you can get sand, the next sieving material."]
+			dependencies: ["68D40173FAC82B28"]
+			id: "509D94F8EE15261F"
+			tasks: [{
+				id: "69C75416B54FC545"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			description: [
+				"Sieve sand through at least a flint mesh to get dust."
+				"You can use the dust to make dust blocks, which are the next sieving material."
+			]
+			dependencies: [
+				"509D94F8EE15261F"
+				"0B8F780422541257"
+			]
+			id: "0E262A461B4E9090"
+			tasks: [
+				{
+					id: "30ED7D7FDC4F4F9D"
+					type: "item"
+					item: "kubejs:dust"
+				}
+				{
+					id: "6836EB1D84748758"
+					type: "item"
+					item: "exnihilosequentia:dust"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["0B8F780422541257"]
+			id: "549242754B444201"
+			tasks: [{
+				id: "0D94EEE23E1B7284"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_iron"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["549242754B444201"]
+			id: "14F5D3632091C5C8"
+			tasks: [{
+				id: "1BA29E42007B5D6D"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_diamond"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			dependencies: ["14F5D3632091C5C8"]
+			id: "3B25E7133D8992AE"
+			tasks: [{
+				id: "74FDA7FEDFA39AE2"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_emerald"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			dependencies: ["3B25E7133D8992AE"]
+			id: "4EA56E883AB26D37"
+			tasks: [{
+				id: "620A09158AF406C5"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:mesh_netherite"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			description: ["You can use a wooden crucible with leaves or saplings to make water."]
+			dependencies: ["09D1F1603B0AFCB2"]
+			id: "264E983650C42D82"
+			tasks: [{
+				id: "195C4303C3EAC71E"
+				type: "item"
+				item: "exnihilosequentia:crucible_wood"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -4.0d
+			description: [
+				"You can compost organic material in the barrel to create dirt."
+				"Also, when the barrel is empty and it is raining, the barrel will slowly collect water."
+			]
+			dependencies: ["09D1F1603B0AFCB2"]
+			id: "700D9B8B78749F5F"
+			tasks: [{
+				id: "44883DFC4AB44CBE"
+				type: "item"
+				item: "exnihilosequentia:barrel_wood"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			description: [
+				"Use a block of dust on a barrel filled with water to get clay."
+				"You can use bottles or a bucket to move the water from the crucible to the barrel if needed."
+			]
+			dependencies: [
+				"700D9B8B78749F5F"
+				"264E983650C42D82"
+			]
+			id: "4FC50A922EA1C4B0"
+			tasks: [
+				{
+					id: "599264FDD1017B1C"
+					type: "item"
+					item: "minecraft:clay"
+				}
+				{
+					id: "37229ADEC6C2F8D0"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["4FC50A922EA1C4B0"]
+			id: "5822816F896727E7"
+			tasks: [{
+				id: "3804CD3B0D51B619"
+				type: "item"
+				item: "ceramics:unfired_clay_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			dependencies: ["5822816F896727E7"]
+			id: "16F924B8F9535709"
+			tasks: [{
+				id: "7BBAB0934BCAE997"
+				type: "item"
+				item: "ceramics:clay_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: [
+				"4FC50A922EA1C4B0"
+				"0E262A461B4E9090"
+			]
+			id: "493D697DC166B00F"
+			tasks: [{
+				id: "2D13D6D7A075E1D2"
+				type: "item"
+				item: "exnihilosequentia:porcelain_clay"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["493D697DC166B00F"]
+			id: "19C461CF77777C82"
+			tasks: [{
+				id: "067ADABF82C52581"
+				type: "item"
+				item: "exnihilosequentia:crucible_unfired"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			description: [
+				"This crucible, as opposed to the wooden crucible, requires heat to work."
+				"Look in JEI for the different heat sources and their speed multiplier."
+			]
+			dependencies: ["19C461CF77777C82"]
+			id: "04BF3C83AACD290E"
+			tasks: [{
+				id: "7455303CDA5E3869"
+				type: "item"
+				item: "exnihilosequentia:crucible_fired"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["16F924B8F9535709"]
+			id: "5E5C91CEE69237D2"
+			tasks: [{
+				id: "13ACA2E9E913F0D2"
+				type: "item"
+				item: {
+					id: "ceramics:clay_bucket"
+					Count: 1b
+					tag: {
+						fluid: "minecraft:water"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["04BF3C83AACD290E"]
+			id: "18E7ACCF196411B4"
+			tasks: [{
+				id: "4F2C05180D81DFA7"
+				type: "item"
+				item: {
+					id: "ceramics:cracked_clay_bucket"
+					Count: 1b
+					tag: {
+						fluid: "minecraft:lava"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			description: [
+				"The cobble, stone and basalt generators in this pack are nerfed to allow easier access to different materials."
+				"You should try getting most of them, as they reduce the amount of crushing and sifting you need to do."
+			]
+			dependencies: [
+				"5E5C91CEE69237D2"
+				"18E7ACCF196411B4"
+			]
+			id: "5D6039D32745BD27"
+			tasks: [{
+				id: "1AD08B975F9EBBE0"
+				type: "checkmark"
+				title: "Cobble generator"
+			}]
+		}
+	]
+}

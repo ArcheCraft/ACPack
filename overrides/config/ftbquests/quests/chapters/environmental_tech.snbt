@@ -1,0 +1,11 @@
+{
+	id: "22517C30A423E2A7"
+	group: "2B6AC4A790F6F993"
+	order_index: 3
+	filename: "environmental_tech"
+	title: "Environmental Tech"
+	icon: "envirotech:litherite_void_miner_ccu"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

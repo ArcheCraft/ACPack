@@ -1,0 +1,231 @@
+name: ac-pack
+title: ACPack
+version: ${VERSION:-dev}
+author:
+  - ArcheCraft1
+
+minecraft: 1.16.5
+forge: 36.1.10 # ae2 requires this version. change back to 'recommended'
+
+mods:
+# --- JEI ---
+  - jei
+  - just-enough-resources-jer
+  - more-overlays-updated:
+      clientonly: true
+  - jei-integration
+  - jei-professions
+  - just-enough-piglin-bartering
+  - just-enough-calculation
+  - jei-enchantment-info
+# --- WAWLA ---
+  - wawla
+  - waila-harvestability
+  - hwyla:
+      release: 3033593 # File not found
+# --- Inventory ---
+  - mouse-tweaks
+  - inventory-tweaks-renewed
+  - trashslot
+  - findme
+# --- UI ---
+  - appleskin:
+      clientonly: true
+  - neat:
+      clientonly: true
+  - better-advancements
+  - enchantment-descriptions
+  - drawers-tooltip
+  - overloaded-armor-bar
+# --- Fixes ---
+  - flickerfix
+  - attributefix
+  - stats-keeper
+# --- Menu ---
+  - controlling:
+      clientonly: true
+  - reauth:
+      clientonly: true
+  - shutup-experimental-settings
+  - default-options
+# --- Curios ---
+  - curious-elytra
+  - curio-of-undying
+# --- Other client stuff ---
+  - morpheus
+  - better-burning
+  - wall-jump
+  - crash-utilities
+  - client-tweaks
+  - extreme-sound-muffler
+  - faster-ladder-climbing
+  - spice-of-life-carrot-edition
+  - forgiving-void
+# --- Plants ---
+  - reap-mod
+  - cleancut
+  - botany-trees
+  - snad-back-to-the-past
+  - serene-seasons
+# --- Slabs ---
+  - torchslabs-mod
+  - kleeslabs
+# --- Trees ---
+  - dynamictrees
+  - dynamictreesplus
+  - dynamic-trees-quark
+  - dtbop
+  - dynamic-trees-terraforged
+  - fast-leaf-decay
+  - twerkitmeal
+# --- Food ---
+  - cooking-for-blockheads
+  # --- Pam's Harvestcraft
+  - pams-harvestcraft-2-food-extended
+  - pams-harvestcraft-2-crops
+  - pams-harvestcraft-2-trees
+  - pams-harvestcraft-2-food-core
+# --- FTB ---
+  - ftb-backups-forge
+  - ftb-quests-forge
+  - ftb-chunks-forge
+  - ftb-ultimine-forge
+  - ftb-essentials-forge
+  - ftb-teams-forge
+  - ftb-ranks-forge
+# --- Performance ---
+  - fastworkbench-minus-replacement
+  - fastfurnace
+  - clumps
+  - performant
+  - fps-reducer:
+      clientonly: true
+# --- TContruct ---
+  - tinkers-construct
+# --- AE2 ---
+  - applied-energistics-2
+  - ae2-extras
+  - packagedauto
+  - packagedexcrafting
+# --- Mekanism ---
+  - mekanism
+  - mekanism-additions
+  - mekanism-generators
+# --- Thermal ---
+  - thermal-foundation
+  - thermal-expansion
+  - thermal-innovation
+  - thermal-locomotion
+# --- Integrated ---
+  - integrated-dynamics
+  - integrated-tunnels
+  - integrated-terminals
+  - integrated-crafting
+# --- Environmental ---
+  - environmental-tech
+  - environmental-materials
+  - environmental-core:
+      curseforgeid: 345795
+# --- ExNihilo ---
+  - ex-nihilo-sequentia
+  - ex-nihilo-sequentia-thermal-addon
+  - ex-nihilo-sequentia-ae2-addon
+  - ex-nihilo-sequentia-mekanism-addon
+# --- RFTools ---
+  - rftools-control
+  - rftools-power
+  - rftools-dimensions
+  - rftools-base
+  - rftools-builder
+  - rftools-utility
+  - rftools-storage
+# --- Energy ---
+  - flux-networks
+  - simple-generators
+  - powah
+# --- Storage ---
+  - iron-chests
+  - storage-drawers
+# --- Other big mods ---
+  - quark
+  - cyclic
+  - create
+  - createaddition
+# --- Other Item-Mods ---
+  - simply-jetpacks-2
+  - carry-on
+  - ceramics
+  - apotheosis
+  - time-in-a-bottle-standalone
+  - mining-gadgets
+# --- Automating ---
+  - woot
+  - dark-utilities
+  - mob-grinding-utils
+# --- Other Block-Mods ---
+  - uppers
+  - corail-tombstone
+  - compact-machines
+  - compact-crafting
+  - ender-storage-1-8
+  - more-red
+  - overloaded-compressed-blocks
+  - dank-storage
+  - crafting-station
+  - waystones
+# --- Building ---
+  - construction-wand
+  - building-gadgets
+  - chisels-bits
+  - additional-banners
+  - openblocks-elevator
+  - masonry
+  - secretroomsmod
+# --- Mystical Agriculture ---
+  - mystical-agriculture
+  - mystical-agradditions
+  - mystical-customization
+# --- Magic ---
+  - psi
+  - botania
+# --- All in one ---
+  - patchouli
+  - akashic-tome
+  - morph-o-tool
+# --- Compatibility ---
+  - emendatus-enigmatica
+  - jaopca
+# --- Custom Pack Tweaking ---
+  - cobblegenrandomizer
+  - extended-crafting
+  - game-stages
+  - interactio
+    # --- KubeJS ---
+  - kubejs-forge
+  - kubejs-mekanism
+  - kubejs-thermal
+  - kubejs-create
+# --- Mobs ---
+  - progressive-bosses
+  - sisser
+  - guard-villagers
+  - animal-crops
+# --- World Gen
+  - the-twilight-forest
+  - the-lost-cities
+  - repurposed-structures
+  - telepastries
+  - botania-garden-of-glass
+  - terraforged
+  - biomes-o-plenty
+# --- Libraries with ID
+  - flywheel:
+      curseforgeid: 486392
+  
+
+resourcepacks:
+  - unity
+  - unity-dark-edition
+
+files:
+  - location: overrides/

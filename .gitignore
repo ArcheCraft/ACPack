@@ -1,0 +1,6 @@
+/build/
+/build.sh
+/import.sh
+/update.sh
+/packmaker.lock
+/.idea/

@@ -1,0 +1,11 @@
+{
+	id: "311D7E4F326C83DF"
+	group: "0065AB77FAF57B51"
+	order_index: 3
+	filename: "rftools"
+	title: "RFTools"
+	icon: "rftoolsdim:dimension_builder"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

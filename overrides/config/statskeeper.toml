@@ -1,0 +1,62 @@
+
+[experience]
+	#Make the player drop experience on death, 
+	#make sure to disable this when using the keep option because of XP dupes
+	dropExperience = false
+	#Make the player keep experience when respawning
+	keepExperience = true
+
+[hunger]
+	#Make the player keep hunger when respawning
+	keepHunger = true
+	#The lowest hunger value the player can have when respawning, must be used with keepHunger
+	#Range: 0 ~ 20
+	lowestHunger = 6
+
+	[hunger.saturation]
+		#Make the player keep saturation when respawning
+		keepSaturation = true
+		#Make the player keep saturation when respawning only when hunger is full. Only usable with the other two options
+		keepSaturationWithFullHunger = true
+		#The lowest saturation value the player can have when respawning, must be used with keepSaturation
+		#Range: 0 ~ 20
+		lowestSaturation = 6
+
+	[hunger.no_appetite]
+		#The duration that the player will have the 'No Appetite' effect after respawning (seconds)
+		#Range: > 0
+		effectDuration = 300
+
+[health]
+	enabled = false
+
+	[health.values]
+		#The lowest amount of health a player can have. Can be set to 0 in case only maxHealthAmount is wanted
+		#Range: 0 ~ 1024
+		minHealthAmount = 6
+		#The starting health for the player. Possible values are MIN, MAX or just a number
+		startingHealthAmount = "MIN"
+		#The highest amount of health a player can have
+		#Range: 1 ~ 1024
+		maxHealthAmount = 20
+		#The amount of health lost on each death. It will only work if minHealthAmount is higher than 0
+		#Range: 0 ~ 1024
+		deathDecreasedHealthAmount = 1
+
+	[health.additional]
+		#Values which, when achieved, move the lowest health of the player to the achieved value.
+		#The first threshold can also be non-removable, meaning that the health won't be removed till the player is over that threshold.
+		#This can only be used on the first threshold. To use it make the number negative. Make sure that the values are in ascending order!
+		healthThresholds = [-8, 16]
+		#Config options which should be considered for the reset of health. All available are used by default
+		configChangeReset = ["MIN_HEALTH", "MAX_HEALTH", "STARTING_HEALTH"]
+		#Show a message when a threshold is reached and when health is gained or lost
+		healthChangeMessage = true
+		#Enables 'hardcore' mode which makes the player a spectator when 0 max health is reached.
+		#Setting minHealthAmount to 0 and removing all healthThresholds is required or unexpected behaviour might happen.
+		hardcoreMode = false
+		#Items that increase/decrease health when used. Use an equal sign to define how much health is gained or lost.
+		#e.g. 'minecraft:apple = 1', the health gets increased by 0.5 hearts.
+		#Appending a ':' after the number will make the item that decreases health also bypass healthThresholds
+		regenerativeItems = ["minecraft:nether_star = 1"]
+

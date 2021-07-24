@@ -1,0 +1,11 @@
+{
+	id: "79FC4CFB1F37ECC9"
+	group: "3065F69549DBEC4F"
+	order_index: 0
+	filename: "storage_drawers"
+	title: "Storage Drawers"
+	icon: "storagedrawers:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

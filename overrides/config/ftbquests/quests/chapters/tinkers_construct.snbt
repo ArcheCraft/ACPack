@@ -1,0 +1,172 @@
+{
+	id: "36BE33ED700DF97C"
+	group: "2B6AC4A790F6F993"
+	order_index: 1
+	filename: "tinkers_construct"
+	title: "Tinker's Construct"
+	icon: "tconstruct:smeltery_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.0d
+			y: 0.0d
+			dependencies: ["09D1F1603B0AFCB2"]
+			id: "4CF3A1D01AFC18EE"
+			tasks: [{
+				id: "0A014F713CFC9A61"
+				type: "item"
+				item: "tconstruct:crafting_station"
+			}]
+		}
+		{
+			title: "Basic Tinkering"
+			x: -7.0d
+			y: 2.0d
+			description: ["These tables connect to tabs when placed adjacent to each other."]
+			dependencies: ["4CF3A1D01AFC18EE"]
+			id: "0A9ED251177F062E"
+			tasks: [
+				{
+					id: "1EF811BEC00B4C3E"
+					type: "item"
+					title: "Any #tconstruct:tables"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:tables"
+						}
+					}
+				}
+				{
+					id: "6CE58BF8472784D9"
+					type: "item"
+					title: "Any #tconstruct:tables"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:tables"
+						}
+					}
+				}
+				{
+					id: "00B0317CDA97BC5F"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			description: [""]
+			dependencies: [
+				"4CF3A1D01AFC18EE"
+				"68D40173FAC82B28"
+				"509D94F8EE15261F"
+				"4FC50A922EA1C4B0"
+			]
+			id: "68E5C9525F8461AE"
+			tasks: [{
+				id: "036C3D2A9D9A61C6"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["68E5C9525F8461AE"]
+			id: "344678CB9365DC4D"
+			tasks: [{
+				id: "0B584BF9B1D01D59"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["344678CB9365DC4D"]
+			id: "1DAE25876D9E5028"
+			tasks: [
+				{
+					id: "733E4FAC6161469C"
+					type: "item"
+					item: "tconstruct:melter"
+				}
+				{
+					id: "115B1F59DBE759CA"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "5BF9AC65AD4757DA"
+					type: "item"
+					item: "tconstruct:faucet"
+				}
+				{
+					id: "7A5F4E71CBFDF1E2"
+					type: "item"
+					item: "tconstruct:casting_table"
+				}
+				{
+					id: "45932017201C1186"
+					type: "item"
+					item: "tconstruct:casting_basin"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: [
+				"521EAB8F00E538FA"
+				"0B8F780422541257"
+				"18E7ACCF196411B4"
+			]
+			id: "23BD34E2D324A2FE"
+			tasks: [
+				{
+					id: "7EBB911A8E56E115"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "2F5C7B2ACC25E73B"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "39DAD0B56BD51C8C"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: ["1DAE25876D9E5028"]
+			id: "521EAB8F00E538FA"
+			tasks: [{
+				id: "245563330005A1BA"
+				type: "item"
+				item: "tconstruct:seared_tank"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 4.0d
+			dependencies: ["0A9ED251177F062E"]
+			id: "147352898BC771CE"
+			tasks: [{
+				id: "64011D64683B8748"
+				type: "item"
+				item: "tconstruct:tinkers_anvil"
+			}]
+		}
+	]
+}

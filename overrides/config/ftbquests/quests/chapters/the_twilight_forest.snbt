@@ -1,0 +1,11 @@
+{
+	id: "2DEDD70EEC3F5C9F"
+	group: "3113542920F7B466"
+	order_index: 0
+	filename: "the_twilight_forest"
+	title: "The Twilight Forest"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
