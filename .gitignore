@@ -1,7 +1,9 @@
 /build/
 /build.sh
+/import.sh
 /update.sh
 /packmaker.lock
 /.idea/
 /gradle/wrapper/gradle-wrapper.jar
 /local.properties
+/.gradle
