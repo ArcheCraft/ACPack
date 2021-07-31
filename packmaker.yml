@@ -5,7 +5,7 @@ author:
   - ArcheCraft1
 
 minecraft: 1.16.5
-forge: 36.1.10 # ae2 requires this version. change back to 'recommended'
+forge: recommended
 
 mods:
 # --- JEI ---
@@ -29,18 +29,18 @@ mods:
   - trashslot
   - findme
 # --- UI ---
-  - appleskin:
+  - classic-bars:
       clientonly: true
   - neat:
       clientonly: true
   - better-advancements
   - enchantment-descriptions
   - drawers-tooltip
-  - overloaded-armor-bar
 # --- Fixes ---
   - flickerfix
   - attributefix
-  - stats-keeper
+  - max-health-fix:
+      curseforgeid: 492246 # CF Error... Remove once packmaker updates
 # --- Menu ---
   - controlling:
       clientonly: true
@@ -48,6 +48,7 @@ mods:
       clientonly: true
   - shutup-experimental-settings
   - default-options
+  - defaultworldtype
 # --- Curios ---
   - curious-elytra
   - curio-of-undying
@@ -56,15 +57,15 @@ mods:
   - better-burning
   - wall-jump
   - crash-utilities
+  - not-enough-crashes-forge
+  - blame
   - client-tweaks
   - extreme-sound-muffler
   - faster-ladder-climbing
   - spice-of-life-carrot-edition
   - forgiving-void
 # --- Plants ---
-  - reap-mod
   - cleancut
-  - botany-trees
   - snad-back-to-the-past
   - serene-seasons
 # --- Slabs ---
@@ -74,8 +75,8 @@ mods:
   - dynamictrees
   - dynamictreesplus
   - dynamic-trees-quark
-  - dtbop
-  - dynamic-trees-terraforged
+  - dynamic-trees-terraforged:
+      curseforgeid: 488347 # CF Error... Remove once packmaker updates
   - fast-leaf-decay
   - twerkitmeal
 # --- Food ---
@@ -154,10 +155,11 @@ mods:
 # --- Other Item-Mods ---
   - simply-jetpacks-2
   - carry-on
-  - ceramics
   - apotheosis
   - time-in-a-bottle-standalone
   - mining-gadgets
+  - baubley-heart-canisters
+  - sophisticated-backpacks
 # --- Automating ---
   - woot
   - dark-utilities
@@ -187,14 +189,12 @@ mods:
   - mystical-customization
 # --- Magic ---
   - psi
-  - botania
 # --- All in one ---
   - patchouli
   - akashic-tome
   - morph-o-tool
 # --- Compatibility ---
   - emendatus-enigmatica
-  - jaopca
 # --- Custom Pack Tweaking ---
   - cobblegenrandomizer
   - extended-crafting
@@ -203,7 +203,7 @@ mods:
     # --- KubeJS ---
   - kubejs-forge
   - kubejs-mekanism
-  - kubejs-thermal
+  # - kubejs-thermal
   - kubejs-create
 # --- Mobs ---
   - progressive-bosses
@@ -215,9 +215,7 @@ mods:
   - the-lost-cities
   - repurposed-structures
   - telepastries
-  - botania-garden-of-glass
   - terraforged
-  - biomes-o-plenty
 # --- Libraries with ID
   - flywheel:
       curseforgeid: 486392

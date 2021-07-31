@@ -17,5 +17,5 @@
 	#Blacklisted Sounds - add the name of the sounds to blacklist, separated with comma
 	forbiddenSounds = ["ui.", "music.", "ambient."]
 	#Whether or not use the dark theme
-	useDarkTheme = false
+	useDarkTheme = true
 

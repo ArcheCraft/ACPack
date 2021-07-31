@@ -2,9 +2,9 @@
 #Everything to do with gameplay
 [gameplay]
 	#If true, anvils will show all metal variants. If false, only the first variant in the tag will show (typically tinkers bronze)
-	showAllAnvilVariants = true
+	showAllAnvilVariants = false
 	#If true, tables such as the part builder and tinker station will show all variants. If false they will show just the first entry in the tag, typically oak.
-	showAllTableVariants = true
+	showAllTableVariants = false
 	#Set this to false to disable new players spawning with the Tinkers' Book.
 	shouldSpawnWithTinkersBook = false
 	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
@@ -37,9 +37,9 @@
 #Everything to do with world generation
 [worldgen]
 	#Generate Cobalt
-	generateCobalt = true
+	generateCobalt = false
 	#Generate Copper
-	generateCopper = true
+	generateCopper = false
 	#Approx Ores per Chunk
 	veinCountCobalt = 8
 	#Approx Ores per Chunk

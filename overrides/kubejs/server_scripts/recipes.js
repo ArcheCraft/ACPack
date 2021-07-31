@@ -70,20 +70,15 @@ const materials = [
 ]
 
 
-events.listen(`recipes`, event => {
-    const press = (input, output) => {
-        event.recipes.thermal.press(output, input)
-        event.recipes.create.pressing(output, input)
-    }
-
+onEvent(`recipes`, event => {
     const smoking = (output, input) => {
         event.smelting(output, input).xp(0.1)
         event.smoking(output, input).xp(0.1)
     }
 
-    const inductionSmelter = (output, inputs) => {
-        event.recipes.thermal.smelter(output, inputs)
-    }
+    // const inductionSmelter = (output, inputs) => {
+    //     event.recipes.thermal.smelter(output, inputs)
+    // }
 
     const metallurgicInfusing = (output, item, infusing, amount) => {
         event.recipes.mekanism.metallurgic_infusing(output, item, infusing, amount)
@@ -146,6 +141,6 @@ events.listen(`recipes`, event => {
     event.shapeless(Item.of('minecraft:clay_ball', 4), ['minecraft:clay'])
 
 
-    event.shaped(Item.of('exnihilosequentia:dust', 1), ['CC', 'CC'], {C: 'kubejs:dust'})
+    event.shaped(Item.of('exnihilosequentia:dust', 1), [`CC`, 'CC'], {C: 'kubejs:dust'})
 
 })

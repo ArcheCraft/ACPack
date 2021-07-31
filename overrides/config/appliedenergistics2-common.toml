@@ -46,13 +46,13 @@
 
 	[features.World]
 		#No comment
-		CertusQuartzWorldGen = true
+		CertusQuartzWorldGen = false
 		#No comment
 		VillagerTrading = true
 		#No comment
 		SpawnPressesInMeteorites = true
 		#No comment
-		MeteoriteWorldGen = true
+		MeteoriteWorldGen = false
 
 [general]
 	#Will auto-remove items that crash when being loaded from storage. This will destroy those items instead of crashing the game!
